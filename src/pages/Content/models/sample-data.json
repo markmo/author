@@ -1,0 +1,14 @@
+{
+  "obj": {
+    "key1": "value1"
+  },
+  "arr": [
+    {
+      "item1": "value1"
+    },
+    42
+  ],
+  "optional": {
+    "primitive": 42
+  }
+}

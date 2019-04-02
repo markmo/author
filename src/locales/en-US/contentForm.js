@@ -1,0 +1,18 @@
+export default {
+  'form.type.label': 'Content Type',
+  'form.type.label.help': 'Select type of content',
+  'form.type.radio.plain': 'Plain',
+  'form.type.radio.list': 'List',
+  'form.type.radio.property-box': 'Property Box',
+  'form.type.radio.multimedia': 'Multimedia',
+  'form.plain.label': 'Plain text',
+  'form.plain.placeholder': 'Enter text',
+  'form.list.label': 'List items',
+  'form.list.placeholder': 'Enter text',
+  'form.properties.label': 'Properties',
+  'form.properties.placeholder': 'Enter property',
+  'form.property-keys.label': 'Property Keys',
+  'form.property-keys.label.help': 'Enter a comma-separated list of keys',
+  'form.property-keys.placeholder': 'Enter property keys',
+  'form.multimedia.label': 'Multimedia',
+};
