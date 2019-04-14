@@ -39,7 +39,8 @@ and video. There have been initiative to create structured document standards su
 standards have been applied to technical writing in areas such as engineering product specifications and 
 publishing. These standards have authored content using XML.
 
-While there are relevant lessons, a simpler model is required to take a next step in getting 'the right information to the right people at the right time.'
+While there are relevant lessons, a simpler model is required to take a next step in getting 'the right 
+information to the right people at the right time.'
 
 We can combine lessons from:
 
@@ -89,18 +90,20 @@ The design has the following characteristics:
   reference topic.
 * Content is accessible via an application programming interface (API).
 
+See [Appendix - Content Creation Guidelines](docs/content_creation_guidelines.md).
+
+### Screenshots
+
 The figures below show screenshots from the work in progress.
 
-![Authoring Tool - Intents](images/screenshot_intents.png)
 _Authoring Tool - Intents_
+![Authoring Tool - Intents](images/screenshot_intents.png)
 
-![Authoring Tool - Examples (to train a Natural Language Query Engine)](images/screenshot_examples.png)
 _Authoring Tool - Examples (to train a Natural Language Query Engine)_
+![Authoring Tool - Examples (to train a Natural Language Query Engine)](images/screenshot_examples.png)
 
-![Authoring Tool - Creating a Plain Text Answer](images/screenshot_text_response.png)
 _Authoring Tool - Creating a Plain Text Answer_
+![Authoring Tool - Creating a Plain Text Answer](images/screenshot_text_response.png)
 
-![Authoring Tool - Writing an answer formatted as a list](images/screenshot_list_response.png)
 _Authoring Tool - Writing an answer formatted as a list_
-
-See [Appendix - Content Creation Guidelines](docs/content_creation_guidelines.md).
+![Authoring Tool - Writing an answer formatted as a list](images/screenshot_list_response.png)
