@@ -102,8 +102,5 @@ _Authoring Tool - Intents_
 _Authoring Tool - Examples (to train a Natural Language Query Engine)_
 ![Authoring Tool - Examples (to train a Natural Language Query Engine)](images/screenshot_examples.png)
 
-_Authoring Tool - Creating a Plain Text Answer_
-![Authoring Tool - Creating a Plain Text Answer](images/screenshot_text_response.png)
-
 _Authoring Tool - Writing an answer formatted as a list_
 ![Authoring Tool - Writing an answer formatted as a list](images/screenshot_list_response.png)
