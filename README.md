@@ -1,136 +1,106 @@
-English | [简体中文](./README.zh-CN.md) | [Русский](./README.ru-RU.md)  | [Türkçe](./README.tr-TR.md)
+# author
 
-<h1 align="center">Ant Design Pro</h1>
+### Beyond Documents to Enhance Knowledge Augmentation
 
-<div align="center">
+Documents have a number of issues for information retrieval:
 
-An out-of-box UI solution for enterprise applications as a React boilerplate.
+* They mix task-orientated answers with context such as background, in-depth discussion and so forth.
+* Documents are designed for humans to read given time. They tend to collect as much information known 
+  about a given topic to serve multiple purposes.
+* They therefore take time to read, better suited to consumption outside task-specific or customer-facing 
+  work flows.
+* Formatting and content are mixed together, making it difficult for a machine to read.
 
-[![Build With Umi](https://img.shields.io/badge/build%20with-umi-028fe4.svg?style=flat-square)](http://umijs.org/)
-[![Build Status](https://dev.azure.com/ant-design/ant-design-pro/_apis/build/status/ant-design.ant-design-pro?branchName=master)](https://dev.azure.com/ant-design/ant-design-pro/_build/latest?definitionId=1?branchName=master)
-[![Dependencies](https://img.shields.io/david/ant-design/ant-design-pro.svg)](https://david-dm.org/ant-design/ant-design-pro)
-[![DevDependencies](https://img.shields.io/david/dev/ant-design/ant-design-pro.svg)](https://david-dm.org/ant-design/ant-design-pro?type=dev)
-[![Gitter](https://img.shields.io/gitter/room/ant-design/pro-english.svg?style=flat-square&logoWidth=20&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjEyMzUiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgNzQxMCAzOTAwIj4NCjxyZWN0IHdpZHRoPSI3NDEwIiBoZWlnaHQ9IjM5MDAiIGZpbGw9IiNiMjIyMzQiLz4NCjxwYXRoIGQ9Ik0wLDQ1MEg3NDEwbTAsNjAwSDBtMCw2MDBINzQxMG0wLDYwMEgwbTAsNjAwSDc0MTBtMCw2MDBIMCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjMwMCIvPg0KPHJlY3Qgd2lkdGg9IjI5NjQiIGhlaWdodD0iMjEwMCIgZmlsbD0iIzNjM2I2ZSIvPg0KPGcgZmlsbD0iI2ZmZiI%2BDQo8ZyBpZD0iczE4Ij4NCjxnIGlkPSJzOSI%2BDQo8ZyBpZD0iczUiPg0KPGcgaWQ9InM0Ij4NCjxwYXRoIGlkPSJzIiBkPSJNMjQ3LDkwIDMxNy41MzQyMzAsMzA3LjA4MjAzOSAxMzIuODczMjE4LDE3Mi45MTc5NjFIMzYxLjEyNjc4MkwxNzYuNDY1NzcwLDMwNy4wODIwMzl6Ii8%2BDQo8dXNlIHhsaW5rOmhyZWY9IiNzIiB5PSI0MjAiLz4NCjx1c2UgeGxpbms6aHJlZj0iI3MiIHk9Ijg0MCIvPg0KPHVzZSB4bGluazpocmVmPSIjcyIgeT0iMTI2MCIvPg0KPC9nPg0KPHVzZSB4bGluazpocmVmPSIjcyIgeT0iMTY4MCIvPg0KPC9nPg0KPHVzZSB4bGluazpocmVmPSIjczQiIHg9IjI0NyIgeT0iMjEwIi8%2BDQo8L2c%2BDQo8dXNlIHhsaW5rOmhyZWY9IiNzOSIgeD0iNDk0Ii8%2BDQo8L2c%2BDQo8dXNlIHhsaW5rOmhyZWY9IiNzMTgiIHg9Ijk4OCIvPg0KPHVzZSB4bGluazpocmVmPSIjczkiIHg9IjE5NzYiLz4NCjx1c2UgeGxpbms6aHJlZj0iI3M1IiB4PSIyNDcwIi8%2BDQo8L2c%2BDQo8L3N2Zz4%3D)](https://gitter.im/ant-design/pro-english?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Join the chat at https://gitter.im/ant-design/ant-design-pro](https://img.shields.io/gitter/room/ant-design/ant-design-pro.svg?style=flat-square&logoWidth=20&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjkwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAzMCAyMCI%2BDQo8ZGVmcz4NCjxwYXRoIGlkPSJzIiBkPSJNMCwtMSAwLjU4Nzc4NSwwLjgwOTAxNyAtMC45NTEwNTcsLTAuMzA5MDE3SDAuOTUxMDU3TC0wLjU4Nzc4NSwwLjgwOTAxN3oiIGZpbGw9IiNmZmRlMDAiLz4NCjwvZGVmcz4NCjxyZWN0IHdpZHRoPSIzMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2RlMjkxMCIvPg0KPHVzZSB4bGluazpocmVmPSIjcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSw1KSBzY2FsZSgzKSIvPg0KPHVzZSB4bGluazpocmVmPSIjcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAsMikgcm90YXRlKDIzLjAzNjI0MykiLz4NCjx1c2UgeGxpbms6aHJlZj0iI3MiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLDQpIHJvdGF0ZSg0NS44Njk4OTgpIi8%2BDQo8dXNlIHhsaW5rOmhyZWY9IiNzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiw3KSByb3RhdGUoNjkuOTQ1Mzk2KSIvPg0KPHVzZSB4bGluazpocmVmPSIjcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAsOSkgcm90YXRlKDIwLjY1OTgwOCkiLz4NCjwvc3ZnPg%3D%3D)](https://gitter.im/ant-design/ant-design-pro?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+To date, documents have generally been the unit of knowledge. Whether a Word document, a PDF or 
+a Web Page - the paradigm has been the same. Search technology and information retrieval methods 
+have focused on finding relevant documents to a query. Users must then sift through the document 
+to find what they need. Various approaches to extracting relevant chunks of information from 
+documents, highlighting relevant passages or summarising content have mixed success depending on 
+cleanliness of format, length, and various forms of annotation and tagging. Most techniques start 
+from the assumption that documents are as given, and we'll do our best to get the relevant information.
 
-![](https://user-images.githubusercontent.com/8186664/44953195-581e3d80-aec4-11e8-8dcb-54b9db38ec11.png)
+By revisiting how content is authored we can start to address some of the above shortcomings. I believe 
+that we can work backwards from information retrieval methods to optimise content creation taking into 
+account:
 
-</div>
+1. Content is used for various task-specific purposes and should be malleable for these purposes. For 
+   example, the needs of handling support enquiries are different from the needs of research and education.
+2. Content is going to be served via multiple interfaces. For example, a messaging application requires 
+   content in a different format than a web application used to explore a given topic.
+3. Machines as well as humans will read content to facilitate the above considerations.
 
-- Preview: http://preview.pro.ant.design
-- Home Page: http://pro.ant.design
-- Documentation: http://pro.ant.design/docs/getting-started
-- ChangeLog: http://pro.ant.design/docs/changelog
-- FAQ: http://pro.ant.design/docs/faq
-- Mirror Site in China: http://ant-design-pro.gitee.io
+There is prior art in moving beyond the document constraints. For example, earlier work on Hypertext 
+that led to the World Wide Web and HTML, and also on the Semantic Web, which had similar goals to enable 
+more fluid discovery and navigation of information making greater use of multimedia such as image, sound 
+and video. There have been initiative to create structured document standards such as the 
+[Darwin Information Typing Architecture (DITA)](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture), 
+[DITA Lite](http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html), and
+[DocBook](https://www.slideshare.net/abelsp/docbook-vs-dita-will-the-real-standard-please-stand-up). These 
+standards have been applied to technical writing in areas such as engineering product specifications and 
+publishing. These standards have authored content using XML.
 
-## 2.0 Released Now! 🎉🎉🎉
-[Announcing Ant Design Pro 2.0.0](https://medium.com/ant-design/beautiful-and-powerful-ant-design-pro-2-0-release-51358da5af95)
+While there are relevant lessons, a simpler model is required to take a next step in getting 'the right information to the right people at the right time.'
 
-## Translation Recruitment :loudspeaker:
+We can combine lessons from:
 
-We need your help: https://github.com/ant-design/ant-design-pro/issues/120
+1. DITA and similar prior work in a simplified form
+2. Virtual Assistant design - use of Intent and Entities to determine responses from natural language enquiries
+3. NLP and machine learning approaches to question answering including: Named Entity Recognition, Recurrent 
+   Neural Networks or Attention using SQuAD formatted training sets (question-answer format), knowledge graphs, 
+   and unsupervised learning to train word vectors.
+   
+### Design
 
-## Features
+The design has the following characteristics:
 
-- :gem: **Neat Design**: Follow [Ant Design specification](http://ant.design/)
-- :triangular_ruler: **Common Templates**: Typical templates for enterprise applications
-- :rocket: **State of The Art Development**: Newest development stack of React/umi/dva/antd
-- :iphone: **Responsive**: Designed for variable screen sizes
-- :art: **Theming**: Customizable theme with simple config
-- :globe_with_meridians: **International**: Built-in i18n solution
-- :gear: **Best Practices**: Solid workflow to make your code healthy
-- :1234: **Mock development**: Easy to use mock development solution
-- :white_check_mark: **UI Test**: Fly safely with unit and e2e tests
+![Content Object Model](images/content_object_model.png)
 
-## Templates
+* Content is created in sections suited to a particular task. Borrowing from the DITA standard and design 
+  sessions, we define the following types:
+  * Answer – a direct answer to a potential enquiry defined by Intent, one or more Entities (optional), and 
+    one or more examples of user questions (to match future queries in a support scenario). (Research is 
+    ongoing to generate candidate questions from answer text to train information retrieval algorithms.)
+  * Procedure – a sequence of steps to perform some given task. Individual steps may be optional as determined 
+    by the presence of one or more entities in the natural language query or based on the outcome of earlier 
+    steps. A procedure may be presented as a list or a step at a time as per the design of the user interface.
+  * Reference Topic – topics that describe syntax, instructions, and other reference material, and usually 
+    contains detailed, factual material.
+  * Troubleshooting Topic – describes a condition that the user may want to correct, followed by one or more 
+    descriptions of its cause and suggested remedies.
+  * Glossary Entry – is used for defining a single sense of a given term. In addition to identifying the term 
+    and providing a definition, this topic type might also have basic terminology information, along with any 
+    acronyms or acronym expansions that may apply to term.
+  * Notifications / Alerts
+* Formatting is applied to content when used, e.g. in the form of a stylesheet, as opposed to extensive 
+  formatting when content is created. Basic formats when editing include:
+  * Plain text.
+  * Lists of items. (Lists should max at around 5 items. Summarise to a higher level with nested lists if required.)
+  * Multimedia item such as image or video.
+  * "Property Box" to capture multiple property values for a given item. (Tables can be regarded as a collection of 
+    "property boxes" – one per row. The advantage of a "property box" format is that multiple items can be shown 
+    individually in a small screen interface or presented as a table if space allows.) The following is a "Property 
+    Box" example that Google calls a "Knowledge Panel".
+    ![Property Boc Example](images/property_box_example.png)
+    
+* Multiple versions of a content item can exist for different channels. For example, a short-form response for 
+  a chat interface and a long-form response for a web interface. Similar to “mobile first” software development, 
+  content is best created as “voice or chat first”.
+* Content is interlinked, e.g. an image may be linked to multiple content items, an answer may be linked to a 
+  reference topic.
+* Content is accessible via an application programming interface (API).
 
-```
-- Dashboard
-  - Analytic
-  - Monitor
-  - Workspace
-- Form
-  - Basic Form
-  - Step Form
-  - Advanced From
-- List
-  - Standard Table
-  - Standard List
-  - Card List
-  - Search List (Project/Applications/Article)
-- Profile
-  - Simple Profile
-  - Advanced Profile
-- Account
-  - Account Center
-  - Account Settings
-- Result
-  - Success
-  - Failed
-- Exception
-  - 403
-  - 404
-  - 500
-- User
-  - Login
-  - Register
-  - Register Result
-```
+The figures below show screenshots from the work in progress.
 
-## Usage
+![Authoring Tool - Intents](images/screenshot_intents.png)
+_Authoring Tool - Intents_
 
-### Use bash
+![Authoring Tool - Examples (to train a Natural Language Query Engine)](images/screenshot_examples.png)
+_Authoring Tool - Examples (to train a Natural Language Query Engine)_
 
-```bash
-$ git clone https://github.com/ant-design/ant-design-pro.git --depth=1
-$ cd ant-design-pro
-$ npm install
-$ npm start         # visit http://localhost:8000
-```
+![Authoring Tool - Creating a Plain Text Answer](images/screenshot_text_response.png)
+_Authoring Tool - Creating a Plain Text Answer_
 
-### Use by docker
+![Authoring Tool - Writing an answer formatted as a list](images/screenshot_list_response.png)
+_Authoring Tool - Writing an answer formatted as a list_
 
-```bash
-# preview
-$ docker pull antdesign/ant-design-pro
-$ docker run -p 80:80 antdesign/ant-design-pro
-# open http://localhost
-
-# dev
-$ npm run docker:dev
-
-# build
-$ npm run docker:build
-
-
-# production dev
-$ npm run docker-prod:dev
-
-# production build
-$ npm run docker-prod:build
-```
-
-### Use Gitpod
-
-Open the project in Gitpod (free online dev environment for GitHub) and start coding immediately.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ant-design/ant-design-pro)
-
-More instructions at [documentation](http://pro.ant.design/docs/getting-started).
-
-## Browsers support
-
-Modern browsers and IE11.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
-| --------- | --------- | --------- | --------- | --------- |
-| IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions
-
-## Contributing
-
-Any type of contribution is welcome, here are some examples of how you may contribute to this project:
-
-- Use Ant Design Pro in your daily work.
-- Submit [issues](http://github.com/ant-design/ant-design-pro/issues) to report bugs or ask questions.
-- Propose [pull requests](http://github.com/ant-design/ant-design-pro/pulls) to improve our code.
+See [Appendix - Content Creation Guidelines](docs/content_creation_guidelines.md).
